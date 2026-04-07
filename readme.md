@@ -4,6 +4,8 @@
 
 This project involves developing a machine learning model using `skforecast`, Random Forest Regressor, and dead reckoning to estimate the real-time total national debt (both domestic and external) of the Philippine government based on historical data.
 
+Dataset Source: [Open Data Portal by BetterGov.ph](https://data.bettergov.ph/datasets/13)
+
 NOTE: The Bureau of the Treasury hasn't even officially released the figures for the year 2025.
 
 ## Dependencies
