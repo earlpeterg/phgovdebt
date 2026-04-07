@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy==1.17.0
+scikit-learn==1.8.0
+skforecast
+joblib
+nltk==3.9.2
+gensim==4.4.0
+matplotlib
+seaborn
