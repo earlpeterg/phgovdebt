@@ -1,0 +1,20 @@
+# BEGIN FORCE_HTTPS
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END FORCE_HTTPS
+
+## Disabling directory browsing on Apache
+Options -Indexes
+
+## Cache control for index.html
+<FilesMatch "index.html">
+  FileETag None
+  <IfModule mod_headers.c>
+    Header unset ETag
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </IfModule>
+</FilesMatch>
