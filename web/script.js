@@ -13,7 +13,7 @@
 
         let currentMonthForecast = forecasted_values[month];
         let nextMonthForecast = forecasted_values[month + 1];
-        let forecasted_value = (currentMonthForecast + (nextMonthForecast - currentMonthForecast) * elapsedTimePercentage) * 1000;
+        let forecasted_value = (currentMonthForecast + (nextMonthForecast - currentMonthForecast) * elapsedTimePercentage) * 1000000;
         let formatted_value = Math.round(forecasted_value).toLocaleString('en-US');
 
         $('#forecasted_value').text("₱" + formatted_value);
