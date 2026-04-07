@@ -27,12 +27,8 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     padding: 15px;
     margin: auto;
     text-align: center;
-}
-
-.main-container #forecasted_value {
-    font-size: 2.5rem;
 }
